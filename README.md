@@ -14,7 +14,7 @@ The project is organized into the following directories:
 
 3. **CMIP5**: Contains code for working with precipitation data from the CMIP5 climate model outputs. This directory represents previous work, where GPR was applied to predict long-term trends.
 
-4. **CMIP6**: Contains the primary code for working with real-world precipitation data from the CMIP6 climate model outputs. The focus of the project is on applying GPR to predict both short-term and long-term precipitation oscillations, using the most up-to-date data from CMIP6.
+4. **CMIP6**: Contains the primary code for working with real-world precipitation data from the CMIP6 climate model outputs. The focus of the project is on applying GPR to predict both short-term and mid-term precipitation oscillations, using the most up-to-date data from CMIP6.
 
 5. **data**: This folder holds all datasets used in the project, including middle-range synthetic data, real-world data from CMIP5, CMIP6, and the ENSO index.
 
@@ -25,7 +25,7 @@ Gaussian Process Regression (GPR) is a powerful non-parametric method for regres
 In this project, GPR is employed to capture the periodic oscillatory nature of precipitation data and reduce predictive uncertainty over time. The critical part of this method is constructing suitable kernel functions to model the data's characteristics. Kernel functions measure similarity between data points and define how the model behaves. We use common kernel functions such as the Radial Basis Function (RBF) kernel and periodic kernels, along with customized kernel combinations, to effectively capture oscillations and trends.
 
 ### Key Components:
-- **Kernel Functions**: We use a variety of standard kernel functions combined with periodic transformations. These include the RBF, ExpSineSquared (periodic), DotProduct, RationalQuadratic kernels, and their combinations and transformation. Additionally, we implement a customized kernel function, **KGCM**, designed to capture long-term trends in precipitation data.
+- **Kernel Functions**: We use a variety of standard kernel functions combined with periodic transformations. These include the RBF, ExpSineSquared (periodic), DotProduct, RationalQuadratic kernels... and their combinations and transformation. Additionally, we implement a customized kernel function, **KGCM**, designed to capture long-term trends in precipitation data.
   
 - **Model Fitting**: The GPR models are primarily built using the `sklearn` library, with some custom-written code for specialized kernel functions. 
 
@@ -41,7 +41,7 @@ In this project, GPR is employed to capture the periodic oscillatory nature of p
 
 4. **Real Data Application**: The chosen kernel functions are applied to real-world CMIP6 precipitation data. Predictions are made for short-term and long-term periods, accounting for periodic oscillations and reducing predictive uncertainty over time.
 
-5. **Uncertainty Evolution**: The project analyzes how uncertainty in predictions evolves as more data is observed, particularly focusing on short-term and long-term periodic oscillations in the real-world precipitation data.
+5. **Uncertainty Evolution**: The project analyzes how uncertainty in predictions evolves as more data is observed, particularly focusing on short-term and mid-term periodic oscillations in the real-world precipitation data.
 
 ## Installation
 
