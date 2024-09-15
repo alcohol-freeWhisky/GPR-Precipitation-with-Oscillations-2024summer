@@ -1,7 +1,6 @@
-# GPR-Precipitation-with-Oscillations-2024summer
-Code and data for Gaussian Process Regression for Predicting Precipitation with Oscillations and Reducing Uncertainty Over Time.
-
 # Gaussian Process Regression for Predicting Precipitation with Periodic Oscillations and Reducing Uncertainty Over Time
+
+**Project Poster:** You can view the detailed project poster by clicking [here](./poster.pdf) or downloading it from the `main` branch (`poster.pdf` file).
 
 This repository contains the code and data for a Gaussian Process Regression (GPR) project focused on predicting precipitation patterns that exhibit periodic oscillations, with the added capability of updating predictions and uncertainty over time as more observations become available.
 
